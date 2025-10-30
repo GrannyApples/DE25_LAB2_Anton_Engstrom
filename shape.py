@@ -20,8 +20,8 @@ class Shape:
             raise TypeError("dx and dy must be numbers")
         
     ## went back and forth with an LLM to figure out just how to write all the operation overflows
-    # for this... from what i understand, its needed to change the default behaviour where python check memory
-    # to check for value instead. 
+    # for this... from what i understand, its needed to change the default behaviour where python checks memory allocation 
+    # to instead check for value instead. 
         
     def __eq__(self, other):
         try:
