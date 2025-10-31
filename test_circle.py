@@ -22,3 +22,7 @@ def test_circle_eq():
     assert c1==c2
     c3=Circle(0,0,2)
     assert c1 != c3
+
+def test_circle_str():
+    c = Circle(1,2,3)
+    assert "Circle" in str(c)

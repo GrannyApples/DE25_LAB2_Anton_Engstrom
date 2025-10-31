@@ -22,3 +22,11 @@ class Circle(Shape):
     @property
     def perimeter(self):
         return 2 * PI * self.radius
+    
+    # Overwriting shape inheritance with repr and str
+
+    def __repr__(self):
+        return f"Circle (x={self.x}, y={self.y}, radius={self.radius})"
+    
+    def __str__(self):
+        return f"Circle centered at (x={self.x}, y={self.y}, radius={self.radius})"

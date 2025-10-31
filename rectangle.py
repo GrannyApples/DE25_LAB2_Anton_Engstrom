@@ -11,3 +11,12 @@ class Rectangle(Shape):
             raise TypeError("width and height must be numbers")
         if self.width <= 0 or self.height <= 0:
             raise ValueError("width and height must be positive")
+        
+    ##Again used LLM just for the math formula. 
+    @property
+    def area(self):
+        return self.width * self.height
+
+    @property
+    def perimeter(self):
+        return 2 * (self.width+self.height)
