@@ -26,3 +26,7 @@ def test_circle_eq():
 def test_circle_str():
     c = Circle(1,2,3)
     assert "Circle" in str(c)
+
+def test_circle_repr():
+    c = Circle(1,2,3)
+    assert "Circle centered at" in repr(c)
