@@ -4,7 +4,7 @@ class Shape:
     Handles x/y position, translation, and comparison between shapes
     based on their area.
     """
-    def __init__(self,x=0, y=0):
+    def __init__(self,x:float=0, y:float=0) -> None:
         try:
             self.x = float(x)
             self.y = float(y)

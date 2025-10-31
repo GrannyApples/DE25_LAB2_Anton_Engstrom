@@ -3,7 +3,7 @@ from shape import Shape
 class Rectangle(Shape):
     """A rectangle defined by its center (x, y), width, and height."""
     ##This autocompleted with intellisense, so just need to add height and width, will fix after circle is done.
-    def __init__(self, x=0, y=0, width=1, height=1):
+    def __init__(self, x:float=0, y:float=0, width:float=1, height:float=1) -> None:
         super().__init__(x, y)
         try:
             self.width = float(width)

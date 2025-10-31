@@ -4,7 +4,7 @@ PI = 3.141592
 
 class Circle(Shape):
     """A circle defined by its center (x, y) and radius."""
-    def __init__(self, x=0, y=0, radius=1):
+    def __init__(self, x:float=0, y:float=0, radius:float=1)-> None:
         ## super(). is used to link to the inheretor parent class(Shapes). this autocompleted first, so i had to google/llm what super does
         #and for different ways to do this, seems that super is the "best practice" according to AI.
         super().__init__(x, y)
