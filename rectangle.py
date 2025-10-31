@@ -20,3 +20,9 @@ class Rectangle(Shape):
     @property
     def perimeter(self):
         return 2 * (self.width+self.height)
+    
+    def __repr__(self):
+        return f"Rectangle (x={self.x}, y={self.y}, width={self.width}, height={self.height})"
+    
+    def __str__(self):
+        return f"Rectangle centered at (x={self.x}, y={self.y}, width={self.width}, height={self.height})"
