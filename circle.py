@@ -31,3 +31,7 @@ class Circle(Shape):
     
     def __str__(self):
         return f"Circle centered at (x={self.x}, y={self.y}, radius={self.radius})"
+    
+    def is_unit_circle(self) -> bool:
+        """Check if the circle has radius 3."""
+        return self.radius == 3

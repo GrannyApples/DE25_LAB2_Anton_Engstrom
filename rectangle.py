@@ -27,3 +27,7 @@ class Rectangle(Shape):
     
     def __str__(self):
         return f"Rectangle centered at (x={self.x}, y={self.y}, width={self.width}, height={self.height})"
+    
+    def is_square(self) -> bool:
+        """Check if the rectangle is a square."""
+        return self.width == self.height
