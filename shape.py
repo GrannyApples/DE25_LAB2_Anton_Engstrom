@@ -1,4 +1,9 @@
 class Shape:
+    """Base class for all shapes.
+
+    Handles x/y position, translation, and comparison between shapes
+    based on their area.
+    """
     def __init__(self,x=0, y=0):
         try:
             self.x = float(x)
